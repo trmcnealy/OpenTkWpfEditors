@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:opentkwpf="clr-namespace:OpenTK.WpfEditors">
+    <ResourceDictionary.MergedDictionaries>
+
+        <opentkwpf:VersionResourceDictionary AssemblyName="OpenTK.WpfEditors" SourcePath="/WpfEditors/Color4Canvas.xaml" />
+        <opentkwpf:VersionResourceDictionary AssemblyName="OpenTK.WpfEditors" SourcePath="/WpfEditors/Color4Picker.xaml" />
+
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

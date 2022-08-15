@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <LangVersion>10.0</LangVersion>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RootNamespace>OpenTK</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="OpenTK.WpfEditors.csproj.DotSettings" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenTK" Version="4.7.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="WpfEditors\Controls\Color4Canvas.xaml">
+      <TransformOnBuild>true</TransformOnBuild>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="WpfEditors\Models\" />
+    <Folder Include="WpfEditors\Misc\" />
+  </ItemGroup>
+
+</Project>
