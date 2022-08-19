@@ -7,6 +7,11 @@
     <UseWPF>true</UseWPF>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <RootNamespace>OpenTK</RootNamespace>
+    <RepositoryUrl>https://github.com/trmcnealy/OpenTkWpfEditors</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
+    <Authors>Timothy R. McNealy</Authors>
+    <Copyright>© Timothy R. McNealy</Copyright>
   </PropertyGroup>
 
   <ItemGroup>

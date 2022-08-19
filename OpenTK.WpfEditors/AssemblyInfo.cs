@@ -5,8 +5,8 @@ using System.Windows.Markup;
 using System.Security;
 
 [assembly: AllowPartiallyTrustedCallers]
-[assembly: ComVisible(false)]
-[assembly: CLSCompliant(true)]
+//[assembly: ComVisible(false)]
+//[assembly: CLSCompliant(true)]
 
 [assembly: ThemeInfo(ResourceDictionaryLocation.SourceAssembly, ResourceDictionaryLocation.SourceAssembly)]
 

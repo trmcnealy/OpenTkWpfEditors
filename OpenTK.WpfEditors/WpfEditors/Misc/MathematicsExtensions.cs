@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace OpenTK.WpfEditors;
 
-public static partial class MathematicsExtensions
+internal static partial class MathematicsExtensions
 {
     [CLSCompliant(false)][MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
     public static Mathematics.Vector2 Abs(this Mathematics.Vector2 value)
@@ -12,7 +12,7 @@ public static partial class MathematicsExtensions
     }
 }
 
-public static partial class MathematicsExtensions
+internal static partial class MathematicsExtensions
 {
     [CLSCompliant(false)]
     public static readonly Mathematics.Matrix4 LeftHandedIdentity = new(1f, 0.0f, 0.0f, 0.0f, 0.0f, 1f, 0.0f, 0.0f, 0.0f, 0.0f, -1f, 0.0f, 0.0f, 0.0f, 0.0f, 1f);
@@ -125,7 +125,7 @@ public static partial class MathematicsExtensions
     }
 }
 
-public static partial class MathematicsExtensions
+internal static partial class MathematicsExtensions
 {
     [CLSCompliant(false)][MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
     public static float ToDegrees(this float radians)
@@ -276,7 +276,7 @@ public static partial class MathematicsExtensions
     }
 }
 
-public static partial class MathematicsExtensions
+internal static partial class MathematicsExtensions
 {
     [CLSCompliant(false)][MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
     public static System.Numerics.Vector2 Transform(this System.Numerics.Vector2   v,
@@ -295,7 +295,7 @@ public static partial class MathematicsExtensions
     }
 }
 
-public static partial class MathematicsExtensions
+internal static partial class MathematicsExtensions
 {
     [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
     private static void MinMaxRgb(out float min,
@@ -389,7 +389,7 @@ public static partial class MathematicsExtensions
     }
 }
 
-public static partial class MathematicsExtensions
+internal static partial class MathematicsExtensions
 {
     [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
     internal static Mathematics.Vector4 ToVector4(this Mathematics.Color4 color)
@@ -424,7 +424,7 @@ public static partial class MathematicsExtensions
 
 #region Single Value
 
-public static partial class MathematicsExtensions
+internal static partial class MathematicsExtensions
 {
     [CLSCompliant(false)][MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
     public static System.Drawing.Color ToSystemNumerics(this Mathematics.Color4 value)
@@ -453,7 +453,7 @@ public static partial class MathematicsExtensions
     }
 }
 
-public static partial class MathematicsExtensions
+internal static partial class MathematicsExtensions
 {
     [CLSCompliant(false)][MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
     public static System.Drawing.Color? ToSystemNumerics(this Mathematics.Color4? value)
@@ -478,7 +478,7 @@ public static partial class MathematicsExtensions
     }
 }
 
-public static partial class MathematicsExtensions
+internal static partial class MathematicsExtensions
 {
     [CLSCompliant(false)][MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
     public static Half ToSystemNumerics(this OpenTK.Mathematics.Half value)
@@ -545,7 +545,7 @@ public static partial class MathematicsExtensions
     }
 }
 
-public static partial class MathematicsExtensions
+internal static partial class MathematicsExtensions
 {
     [CLSCompliant(false)][MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
     public static OpenTK.Mathematics.Half ToOpenTK(this Half value)
@@ -612,7 +612,7 @@ public static partial class MathematicsExtensions
     }
 }
 
-public static partial class MathematicsExtensions
+internal static partial class MathematicsExtensions
 {
     [CLSCompliant(false)][MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
     public static Half? ToSystemNumerics(this OpenTK.Mathematics.Half? value)
@@ -679,7 +679,7 @@ public static partial class MathematicsExtensions
     }
 }
 
-public static partial class MathematicsExtensions
+internal static partial class MathematicsExtensions
 {
     [CLSCompliant(false)][MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
     public static OpenTK.Mathematics.Half? ToOpenTK(this Half? value)
@@ -750,7 +750,7 @@ public static partial class MathematicsExtensions
 
 #region Array Value
 
-public static partial class MathematicsExtensions
+internal static partial class MathematicsExtensions
 {
     [CLSCompliant(false)][MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
     public static System.Drawing.Color[] ToSystemNumerics(this Mathematics.Color4[] value)
@@ -781,7 +781,7 @@ public static partial class MathematicsExtensions
     }
 }
 
-//public static partial class MathematicsExtensions
+//internal static partial class MathematicsExtensions
 //{
 //    [CLSCompliant(false)][MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
 //    public static System.Drawing.Color[]? ToSystemNumerics(this OpenTK.Mathematics.Color4[]? value)
@@ -820,7 +820,7 @@ public static partial class MathematicsExtensions
 //    }
 //}
 
-public static partial class MathematicsExtensions
+internal static partial class MathematicsExtensions
 {
     [CLSCompliant(false)][MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
     public static Half[] ToSystemNumerics(this OpenTK.Mathematics.Half[] value)
@@ -873,7 +873,7 @@ public static partial class MathematicsExtensions
     }
 }
 
-public static partial class MathematicsExtensions
+internal static partial class MathematicsExtensions
 {
     [CLSCompliant(false)][MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
     public static OpenTK.Mathematics.Half[] ToOpenTK(this Half[] value)
@@ -925,7 +925,7 @@ public static partial class MathematicsExtensions
     }
 }
 
-//public static partial class MathematicsExtensions
+//internal static partial class MathematicsExtensions
 //{
 //    [CLSCompliant(false)][MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
 //    public static System.Half[]? ToSystemNumerics(this OpenTK.Mathematics.Half[]? value)
@@ -992,7 +992,7 @@ public static partial class MathematicsExtensions
 //    }
 //}
 
-//public static partial class MathematicsExtensions
+//internal static partial class MathematicsExtensions
 //{
 //    [CLSCompliant(false)][MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
 //    public static OpenTK.Mathematics.Half[]? ToOpenTK(this System.Half[]? value)

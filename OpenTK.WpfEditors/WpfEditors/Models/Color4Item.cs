@@ -5,11 +5,9 @@ namespace OpenTK.WpfEditors;
 
 public class Color4Item
 {
-    [CLSCompliant(false)]
     public Color4 Color { get; set; }
     public string Name  { get; set; }
     
-    [CLSCompliant(false)]
     public Color4Item(Color4 color,
                       string name)
     {
